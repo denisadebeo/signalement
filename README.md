@@ -6,10 +6,17 @@ Devise
 Storage
 Email
 
-rails g model Company name:string adresse:string
+rails g scaffold Company name:string adresse:string
 
 rails g migration AddCompanyToUser
 
-rails g model dossier titre:text categorie:string user:references status:string
+rails g scaffold Dossier titre:string categorie:string user:references status:string --skip
 
-rails g model etape dossier:references user:references commentaire:text
+rails g scaffold Etape dossier:references user:references commentaire:text
+
+
+
+=begin
+
+
+=end
