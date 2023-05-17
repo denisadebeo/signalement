@@ -24,8 +24,8 @@
   --space-xxl: 2.5rem;
   --space-xxxl: 3rem;
   --space-xxxxl: 4rem;
-  --color-primary: #408E9A;
-  --color-primary-rotate: #408E9A;
+  --color-primary: #021e07;
+  --color-primary-rotate: #021e07;
   --color-primary-bg: #fdecec;
   --color-secondary: #83bcc5;
   --color-secondary-rotate: #5cc15c;
@@ -157,6 +157,7 @@ a:hover, a:focus, a:active {
   padding-left: var(--space-xs);
   margin-left: auto;
   margin-right: auto;
+  height: 700px;
 }
 
 @media (min-width: 50rem) {
@@ -172,10 +173,11 @@ header {
   gap: var(--space-s);
   margin-top: var(--space-m);
   margin-bottom: var(--space-l);
+  padding-left: var(--space-s);
   max-height: 80px;
   display: flex;
   align-items: center;
-  background-color: red;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 header .header_logo {
@@ -202,6 +204,6 @@ footer {
   padding-left: 10vw;
   flex-direction: column;
   justify-content: center;
-  background-color: red;
+  box-shadow: 0 -4px 2px -2px gray;
   gap: 20px;
 }
