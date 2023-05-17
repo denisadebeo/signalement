@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  gap: var(--space-s);
+  margin-top: var(--space-m);
+  margin-bottom: var(--space-l);
+  max-height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+
+.header .header_logo {
+  margin-left: 30px;
+  max-height: 70px;
+  align-self: flex-start;
+}
+
+.header .header_nom_image {
+  margin-left: auto;
+  margin-right: auto;
+}

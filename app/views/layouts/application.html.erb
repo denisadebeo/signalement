@@ -11,6 +11,16 @@
   </head>
 
   <body>
+    <header>
+       <%= image_tag 'logo.png', alt: 'Logo Signalement' , class: 'header_logo'%>
+       <%= image_tag 'nomImage.png', alt: 'Image Signalement', class: 'header_nom_image'%>
+    </header>
+    
     <%= yield %>
+
+    <footer>
+      <a href='path/to/mentionlegal' >mentions légales</a>
+      <a href="mailto:contact@signalement.app">contact@signalement.app</a>
+    </footer>
   </body>
 </html>

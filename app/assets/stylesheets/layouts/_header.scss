@@ -1,0 +1,27 @@
+// app/assets/stylesheets/layouts/_header.scss
+
+header {
+    display: flex;
+    gap: var(--space-s);
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-l);
+    padding-left: var(--space-s);
+    max-height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 2px -2px gray;
+
+      .header_logo{
+        margin-left: 30px;
+        max-height: 70px;
+        align-self: flex-start;
+      }
+
+      .header_nom_image{
+          margin-left: auto;
+          margin-right: auto;
+      }
+    @include media(tabletAndUp) {
+      margin-bottom: var(--space-xl);
+    }
+  }

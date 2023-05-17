@@ -1,0 +1,110 @@
+// app/assets/stylesheets/config/_reset.scss
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  height: 100%;
+
+  color: var(--color-text-body);
+  line-height: var(--line-height-body);
+  font-family: var(--font-family-sans);
+
+	font-size: 16px;
+  background-color: var(--color-background);
+
+  background-image: url("layouts/website_bck.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  padding: 0px;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-header);
+  line-height: var(--line-height-headers);
+}
+
+h1 {
+  font-size: var(--font-size-xxxl);
+  font-weight: 400;
+  color: #696969;
+  line-height: 100%;
+  position: relative;
+  top: 0.36em;
+  margin-bottom: 0.15em;
+  font-family: geosanslightregular;
+  margin: 0 0 0.70em;
+  text-shadow: 1px 1px 0 #ffffff;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--color-primary);
+  font-family: geosanslightregular;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-l);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 200ms;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-primary-rotate);
+  }
+}
