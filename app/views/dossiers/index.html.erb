@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Dossiers</h1>
+
+<div id="dossiers">
+  <% @dossiers.each do |dossier| %>
+    <%= render dossier %>
+    <p>
+      <%= link_to "Show this dossier", dossier %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dossier", new_dossier_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dossier %>
+
+<div>
+  <%= link_to "Edit this dossier", edit_dossier_path(@dossier) %> |
+  <%= link_to "Back to dossiers", dossiers_path %>
+
+  <%= button_to "Destroy this dossier", @dossier, method: :delete %>
+</div>

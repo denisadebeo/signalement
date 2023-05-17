@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @etape %>
+
+<div>
+  <%= link_to "Edit this etape", edit_etape_path(@etape) %> |
+  <%= link_to "Back to etapes", etapes_path %>
+
+  <%= button_to "Destroy this etape", @etape, method: :delete %>
+</div>
